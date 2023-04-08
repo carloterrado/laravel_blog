@@ -1,0 +1,1 @@
+<footer class="px-2 md:px-12 py-4 ">Copyright @2023</footer>
