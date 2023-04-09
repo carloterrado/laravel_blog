@@ -8,6 +8,7 @@
             <li><a href="#" class="hover:underline hover:underline-offset-2 active:underline">Post</a></li>
             <li><a href="#" class="hover:underline hover:underline-offset-2 active:underline">Settings</a></li>
         </ul>
+
         <div class="ml-auto font-semibold relative ">
             <button id="profile" data-dropdown-toggle="logout" data-dropdown-placement="bottom-start" type="button">{{$author->name}}</button type="button">
 

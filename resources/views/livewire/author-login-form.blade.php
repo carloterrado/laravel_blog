@@ -3,7 +3,6 @@
     @if (Session::get('fail'))
     <div class="border-l-4 border-red-600 px-4 py-2 shadow rounded-sm text-red-500">{{Session::get('fail')}}</div>
     @endif
-
     <h2 class="text-center uppercase font-semibold">Login to your account</h2>
     <div class="flex flex-col">
         <label for="email" class="w-full mb-1">Email address</label>
