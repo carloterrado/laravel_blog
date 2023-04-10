@@ -65,7 +65,7 @@
                 toastr.success(message)
             },
             onError: function(message, element, status) {
-                toastr.success(message)
+                toastr.error(message)
               
             }
         });
