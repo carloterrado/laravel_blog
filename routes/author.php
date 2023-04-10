@@ -13,5 +13,6 @@ Route::prefix('author')->name('author.')->group(function(){
         Route::get('home',[AuthController::class, 'home'])->name('home');
         Route::post('logout',[AuthController::class, 'logout'])->name('logout');
         Route::view('profile','back.pages.profile')->name('profile');
+        Route::post('change-profile-picture',[AuthController::class, 'changeProfilePicture'])->name('change-profile-picture');
     });
 });

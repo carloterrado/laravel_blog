@@ -8,6 +8,7 @@
     <title>@yield('pageTitle')</title>
     @livewireStyles
     <link rel="stylesheet" href="{{asset('css/ijabo.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/ijaboCropTool.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     
 </head>
@@ -19,13 +20,16 @@
     </div>
     @include('back.partials.footer')
     @livewireScripts
-
+    
     <script src="{{asset('js/app.js')}}"></script>
     <script src="{{asset('js/jquery.min.js')}}" ></script>
     <script src="{{asset('js/ijabo.min.js')}}" ></script>
+    <script src="{{asset('js/ijaboCropTool.min.js')}}" ></script>
+    @stack('scripts')
     <script>
         window.addEventListener('showToaster', function(event) {
             toastr.remove();
+            
             if(event.detail.type === 'info'){
                 toastr.info(event.detail.message);
             }else if (event.detail.type === 'success'){

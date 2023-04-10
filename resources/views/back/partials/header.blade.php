@@ -1,1 +1,1 @@
-@livewire('top-header')
+<livewire:top-header />
